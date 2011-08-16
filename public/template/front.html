@@ -1,0 +1,120 @@
+<html>
+    <head>
+        <title>Monopolli</title>
+        <link rel="stylesheet" type="text/css" href="css/960.css" />
+        <link rel="stylesheet" type="text/css" href="css/text.css" />
+        <link rel="stylesheet" type="text/css" href="css/reset.css" />
+        <link rel="stylesheet" type="text/css" href="css/front.css" />
+        <link rel="stylesheet" type="text/css" href="css/tipTip.css" />
+        <link rel="stylesheet" type="text/css" href="js/fancybox/jquery.fancybox-1.3.4.css" />
+        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js" ></script>
+        <script type="text/javascript" src="js/fancybox/jquery.fancybox-1.3.4.pack.js" ></script>
+        <script type="text/javascript" src="js/jquery.tipTip.js"></script>
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $(".login a").fancybox({
+                    'opacity' : false,
+                    'transitionIn' :'elastic',
+                    'transitionOut' :'elastic'
+                });
+                $(".register a").fancybox({
+						
+                    'transitionIn' :'elastic',
+                    'transitionOut' :'elastic'
+                });
+                $(".core-menu a").fancybox({
+                    'width'				: '75%',
+                    'height'			: '75%',
+                    'autoScale'     	: false,
+                    'transitionIn'		: 'elastic',
+                    'transitionOut'		: 'elastic',
+                    'type'				: 'iframe'
+                });
+                $("a, input").tipTip();
+            });
+        </script>
+
+    </head>
+    <body>
+        <div id="wrapper"></div>
+        <div class="container_12">
+            <div class="grid_5 login"><a id="#login-btn"  href="#login-box" title="Untuk Login ke Game " ><h1>Login</h1></a></div>
+            <div class="grid_2">&nbsp;</div>
+            <div class="grid_5 register" ><a href="#register-box" title="Mendaftar Ke game ini"><h1>Register</h1></a></div>
+            <div class="clear"></div>
+
+            <div class="grid_2">&nbsp;</div>
+            <div class="grid_7 core-menu"><a href="http://jqueryui.com/download/?themeParams=%3Fctl%3Dthemeroller" title="Tentang Game"><h1>About</h1></a></div>
+            <div class="grid_3">&nbsp;</div>
+            <div class="clear"></div>
+
+
+
+            <div class="grid_12 ground"></div>
+            <div class="clear"></div>
+
+
+
+        </div>
+        <div style="display:none">
+            <div id="login-box" class="myform">
+                <h1>Login Form</h1>
+                <form>
+                    <fieldset>
+                <label>Username</label>	<input type="text" name="username_login" id="username_login" />
+                <label>Password</label>	<input type="password" name="password_login" id="password_login" />
+                <input type="submit" value="Login"  class="button"/>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+
+        <div style="display:none">
+            <div id="register-box" class="myform">
+                <h1>Daftar Sekarang</h1>
+                <label>Nama<span class="small">Siapa Namamu</span></label>
+                <input type="text" name="nama" id="nama" />
+                <label>Email<span class="small">Email</span></label>
+                <input type="text" name="email" id="email" />
+                <label>Username<span class="small">Pilih Username</span></label>
+                <input type="text" name="username_register" id="username_register" />
+                <label>Password<span class="small">Masukan Password</span></label>
+                <input type="password" name="password_register" id="password_register" />
+                <label>re-Password<span class="small">Tulis Ulang Password</span></label>
+                <input type="password" name="repassword" id="repassword" />
+                <label>Tanggal Lahir<span class="small">tanggal lahir</span></label>
+                <input type="text" name="date" id="date" />
+                <label>Jeni kelamin<span class="small">Jenis Kelamin</span></label>
+                <input type="radio" name="jenis" id="jenis" title="Laki- Laki" />
+                <input type="radio" name="jenis" id="jenis"  title="Perempuan"/>
+                <label>Alamat<span class="small">Alamat</span></label>
+                <input type="text" name="alamat" id="alamat" />
+                <input type="submit" value="Daftar" class="button">
+            </div>
+        </div>
+
+    </body>
+    <script type="text/javascript">
+        // <![CDATA[
+        if ("http:" == document.location.protocol) {
+            document.write(unescape("%3Cscript src='" + (("https:" == document.location.protocol) ? "http://cdn.betaeasy.com" : "http://cdn.betaeasy.com") + "/betaeasy.js' type='text/javascript'%3E%3C/script%3E"))
+        }
+        // ]]>
+    </script>
+    <script type="text/javascript">
+        // <![CDATA[
+        try {
+            BetaEasy.init({
+                betaId: '804',
+                styleType: 'new',
+                buttonAlign: 'right',
+                language: 'en',
+                buttonBackgroundColor: '#f00',
+                buttonMouseHoverBackgroundColor: '#06C',
+                buttonImageActive: 'en/newbtn-6.png',
+                buttonImageHover: 'none'
+            });
+        } catch(err) {}
+        // ]]>
+    </script>
+</html>
