@@ -18,7 +18,11 @@
                 $(".login a").fancybox({
                     'opacity' : false,
                     'transitionIn' :'elastic',
-                    'transitionOut' :'elastic'
+                    'transitionOut' :'elastic',
+                    'onClosed' : function(){
+                        $("#username_login").val("");
+                        $("#password_login").val("");
+                    }
                 });
                 $(".register a").fancybox({
                     'width'	: '75%',
@@ -78,7 +82,8 @@
                     changeMonth: true,
                     changeYear: true
                 });
-              
+                $("#register-form").validate();
+                $("#form-login").validate();
             });
         </script>
 
@@ -107,10 +112,10 @@
         <div style="display:none">
             <div id="login-box" class="myform">
                 <h1>Login Form</h1>
-                <form class="myform">
+                <form class="myform" id="form-login" method="post" action="<?php echo site_url('home/login');?>">
                     <fieldset>
-                        <p><label>Username</label>	<input type="text" name="username_login" id="username_login" /></p>
-                        <p><label>Password</label>	<input type="password" name="password_login" id="password_login" /></p>
+                        <p><label>Username</label>	<input type="text" name="username_login" id="username_login" class="required"/></p>
+                        <p><label>Password</label>	<input type="password" name="password_login" id="password_login" class="required" /></p>
                         <input type="submit" value="Login"  class="button"/>
                     </fieldset>
                 </form>
@@ -132,7 +137,7 @@
                         </p>
                         <p>
                             <label>Email</label>
-                            <input type="text" name="email" id="email" class="required"/>
+                            <input type="text" name="email" id="email" class="required email"/>
                         </p>
                         <p>
                             <label>Username</label>

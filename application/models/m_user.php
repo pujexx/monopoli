@@ -31,5 +31,15 @@ class M_user extends CI_Model {
         }
     }
 
+    function proseslogin($username, $password) {
+        $this->db->select("*")->from("user");
+        $this->db->where("username", $username);
+        $this->db->where("password", md5($password));
+        $result = $this->db->get();
+        if ($result->num_rows() == 1) {
+            return $result->row_array();
+        }
+    }
+
 }
 ?>
