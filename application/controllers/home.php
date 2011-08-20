@@ -2,13 +2,17 @@
 
 class Home extends CI_Controller {
 
+  
+
     function __construct() {
         parent::__construct();
+       
         $this->load->helper('gravatar');
         $this->load->model('m_user');
     }
 
     function index() {
+        echo $this->session->userdata('id_user');
         $this->load->view('front');
     }
 
@@ -56,15 +60,24 @@ class Home extends CI_Controller {
                 $ses = $this->m_user->proseslogin($username, $password);
                 $session['id_user'] = $ses["id_user"];
                 $session['login_user'] = true;
-            }
-            else{
-                $this->session->set_flashdata("notif","Gagal Login");
+                $this->session->set_userdata($session);
+                redirect("dashboard");
+            } else {
+                $this->session->set_flashdata("notif", "Gagal Login");
                 redirect("home/loginform");
             }
         }
     }
-    function loginform(){
+
+    function loginform() {
         $this->load->view("login");
+    }
+
+    function logout() {
+        $this->session->sess_destroy();
+        $this->session->unset_userdata("id_user");
+        $this->session->unset_userdata("login_user");
+        redirect("home","index");
     }
 
 }

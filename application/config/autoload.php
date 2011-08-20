@@ -84,7 +84,8 @@ $autoload['helper'] = array(
     'security',
     'text',
     'url',
-    'xml'
+    'xml',
+    'gravatar'
     );
 
 
@@ -130,7 +131,7 @@ $autoload['language'] = array();
   |
  */
 
-$autoload['model'] = array();
+$autoload['model'] = array('m_user');
 
 
 /* End of file autoload.php */

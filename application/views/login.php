@@ -8,7 +8,7 @@
         <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>public/template/css/tipTip.css" />
         <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>public/template/js/fancybox/jquery.fancybox-1.3.4.css" />
         <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>public/template/css/custom-theme/jquery-ui-1.8.15.custom.css" />
-        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js" ></script>
+        <script type="text/javascript" src="<?php echo base_url(); ?>public/template/js/jquery-1.6.2.min.js" ></script>
         <script type="text/javascript" src="<?php echo base_url(); ?>public/template/js/fancybox/jquery.fancybox-1.3.4.pack.js" ></script>
         <script type="text/javascript" src="<?php echo base_url(); ?>public/template/js/jquery.tipTip.js"></script>
         <script type="text/javascript" src="<?php echo base_url(); ?>public/template/js/jsvalidate.js"></script>
@@ -35,8 +35,8 @@
                 <?php }?>
             </div>
             <div class="clear"></div>
-            <div class="grid_4 logo"></div>
-            <div class="grid_2">&nbsp;</div>
+            <div class="grid_6 logo"></div>
+         
             <div class="grid_6 form-login-page">
 
                 <form class="myform" id="login-form" method="post" action="<?php echo site_url('home/login'); ?>">

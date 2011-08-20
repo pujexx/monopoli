@@ -41,5 +41,14 @@ class M_user extends CI_Model {
         }
     }
 
+    function get_current_user() {
+        $u = $this->session->userdata("id_user");
+        $this->db->where("id_user", $u);
+        $result = $this->db->get("user");
+        if ($result->num_rows() == 1) {
+            return $result->row_array();
+        }
+    }
+
 }
 ?>

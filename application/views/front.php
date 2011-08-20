@@ -8,7 +8,7 @@
         <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>public/template/css/tipTip.css" />
         <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>public/template/js/fancybox/jquery.fancybox-1.3.4.css" />
         <link rel="stylesheet" type="text/css" href="<?php echo base_url(); ?>public/template/css/custom-theme/jquery-ui-1.8.15.custom.css" />
-        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js" ></script>
+        <script type="text/javascript" src="<?php echo base_url(); ?>public/template/js/jquery-1.6.2.min.js" ></script>
         <script type="text/javascript" src="<?php echo base_url(); ?>public/template/js/fancybox/jquery.fancybox-1.3.4.pack.js" ></script>
         <script type="text/javascript" src="<?php echo base_url(); ?>public/template/js/jquery.tipTip.js"></script>
         <script type="text/javascript" src="<?php echo base_url(); ?>public/template/js/jsvalidate.js"></script>
@@ -112,7 +112,7 @@
         <div style="display:none">
             <div id="login-box" class="myform">
                 <h1>Login Form</h1>
-                <form class="myform" id="form-login" method="post" action="<?php echo site_url('home/login');?>">
+                <form class="myform" id="form-login" method="post" action="<?php echo site_url('home/login'); ?>">
                     <fieldset>
                         <p><label>Username</label>	<input type="text" name="username_login" id="username_login" class="required"/></p>
                         <p><label>Password</label>	<input type="password" name="password_login" id="password_login" class="required" /></p>

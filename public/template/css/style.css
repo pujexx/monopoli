@@ -1,0 +1,301 @@
+/* 
+    Document   : style
+    Created on : Aug 17, 2011, 7:54:53 PM
+    Author     : poedjex
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+/* 
+   TODO customize this sample style
+   Syntax recommendation http://www.w3.org/TR/REC-CSS2/
+*/
+body {
+    background: #b6ffff;
+}
+a {
+    color: #006666;
+    text-decoration: none;
+}
+a:hover{
+    color: #009999;
+}
+
+/*Form*/
+
+
+.myform{
+    width: 400px;
+}
+form.myform fieldset {
+    margin-bottom: 10px;
+}
+
+form.myform legend {
+    padding: 0 2px;
+    font-weight: bold;
+    _margin: 0 -7px; /* IE Win */
+}
+
+form.myform label {
+    display: inline-block;
+    line-height: 1.8;
+    vertical-align: top;
+    cursor: hand;
+    width: 200px;
+}
+
+form.myform fieldset p {
+    list-style: none;
+    padding: 5px;
+    margin: 0;
+}
+
+form.myform fieldset fieldset {
+    border: none;
+    margin: 3px 0 0;
+}
+
+form.myform fieldset fieldset legend {
+    padding: 0 0 5px;
+    font-weight: normal;
+}
+
+form.myform fieldset fieldset label {
+    display: block;
+    width: auto;
+}
+
+form.myform label { width: 100px; } /* Width of labels */
+form.myform fieldset fieldset label { margin-left: 103px; } /* Width plus 3 (html space) */
+form.myform label.error {
+    margin-left: 103px;
+    width: 220px;
+    color: red;
+}
+
+form.myform input.submit {
+    margin-left: 103px;
+}
+label{
+    display:block;
+
+}
+input{
+
+    font-size:12px;
+    padding:4px 2px;
+    border:solid 1px #aacfe4;
+    width:200px;
+    margin:2px 0 20px 10px;
+    border-radius : 4px;
+    -webkit-border-radius : 4px;
+    -moz-border-radius : 4px;
+}
+.button{
+
+    margin-left:150px;
+    width:125px;
+    height:40px;
+    background:#666666 url(img/button.png) no-repeat;
+    text-align:center;
+    line-height:31px;
+    color:#FFFFFF;
+    font-size:11px;
+    font-weight:bold;
+    padding: 5px;
+}
+
+.top{
+    background: url(../images/top-bg.png) repeat-x;
+    width: 100%;
+    height: 91px;
+}
+.top .logo{
+    background: url(../images/logo-monopoli.png) no-repeat;
+    position: relative;
+    height: 172px;
+
+}
+/*content*/
+.left-auter {
+    background: #5ac4ff;
+    width: 100%;
+    border-radius : 10px;
+    -webkit-border-radius : 10px;
+    -moz-border-radius: 10px;
+}
+.content{
+    width: 95%;
+    margin-top: 4px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.content .title-content{
+    width: 100%;
+    height: 30px;
+    text-align: right;
+    border-bottom: 1px #cccccc solid;
+
+}
+.room{
+    width: 100px;
+    height: 120px;
+    float: left;
+    margin: 10px;
+    background: white;
+    -moz-border-radius: 8px;
+    border-radius : 8px;
+    -webkit-border-radius : 8px;
+
+}
+.room h1{
+    text-align: center;
+}
+.room img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -30px;
+}
+.room .count-room{
+    color : white;
+    left: 57px;   
+    position: relative;
+    display: block;
+}
+.room:hover{
+    background: #009999;
+    -moz-box-shadow : 3px 3px 3px #333;
+    -webkit-box-shadow : 3px 3px 3px #333;
+    box-shadow : 3px 3px 3px #333;
+}
+/*widget*/
+.menu-widget{
+    background: #5ac4ff;
+    width: 100%;
+    border-radius : 10px;
+    -webkit-border-radius : 10px;
+    -moz-border-radius: 10px;
+}
+.menu-widget h1{
+    text-align: center;
+    padding-top: 8px;
+}
+.menu-widget .content-widget{
+    width: 95%;
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 4px;
+    margin-top: 4px;
+}
+.menu-widget .content-widget img{
+    width: 30%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 4px;
+
+}
+.search-box{
+
+    margin-right: auto;
+}
+.search input{
+
+    padding: 3px;
+}
+.search input[type=submit]{
+    width: 40px;
+}
+.menu {
+    list-style: none;
+
+}
+.menu li{
+    padding-top: 2px;
+    background: #cccccc;
+    margin-top: 2px;
+    padding-top: 3px;
+
+}
+.menu li a {
+    color: black;
+    display: block;
+}
+.content .map{
+    width: 95%;
+    height: 250px;
+    border-radius :10px;
+    -moz-border-radius : 10px;
+    -webkit-border-radius : 10px;
+    border: 2px #000 solid;
+
+}
+.content .user{
+    width: 60px;
+    height: 60px;
+    float: left;
+    background: white;
+    margin: 8px;
+}
+.content .user img{
+    display: block;
+    width: 40px;
+    height: 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.loading {
+
+    width: 160px;
+    height: 50px;
+    position: absolute;
+    right: auto;
+    left: auto;
+    top: 430px;
+    background: white;
+    border-radius : 8px;
+    -moz-border-radius : 8px;
+    -webkit-border-radius : 8px;
+    display: none;
+}
+.loading img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3px;
+}
+.load_more {
+    background-color:#FFFFFF;
+    background-image:url(../images/more.gif);
+    background-position:left top;
+    background-repeat:repeat-x;
+    border-color:#DDDDDD #AAAAAA #AAAAAA #DDDDDD;
+    border-style:solid;
+    border-width:1px;
+    display:block;
+    font-size:14px;
+    font-weight:bold;
+    height:22px;
+    line-height:1.5em;
+    margin-bottom:6px;
+    outline:medium none;
+    padding:6px 0;
+    text-align:center;
+    text-shadow:1px 1px 1px #FFFFFF;
+    width:100%;
+}
+.load_more {
+    -moz-border-radius:5px 5px 5px 5px;
+}
+.load_more:hover {
+    background-position:left -78px;
+    border:1px solid #BBBBBB;
+    text-decoration:none;
+}
+.load_more:active {
+    background-position:left -38px;
+    color:#666666;
+}
